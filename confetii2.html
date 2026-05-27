@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFETI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="confeti.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  
+    
+</head>
+<body>
+        <!-- Fondo decorativo -->
+  <div class="bg-grid"></div>
+  <div class="noise-overlay"></div>
+
+  <canvas id="confetti-canvas"></canvas>
+
+  <main class="container">
+
+    <header class="hero">
+      <div class="badge">Jose Angel • Sanchez • Rodriguez</div>
+      <h1 class="title">
+        <span class="title-line">U A C M</span>
+        <span class="title-line accent">Diseño Web</span>
+      </h1>
+      <p class="subtitle">armando.valera@uacm.edu.mx</p>
+    </header>
+
+      <section class="effects-grid">
+         <div class="effect-card" data-effect="fireworks">
+        <div class="card-icon">🎆</div>
+        <h3>Fuegos Artificiales</h3>
+        <p>Explosiones múltiples en posiciones aleatorias.</p>
+        <button class="btn btn-secondary" id="btn-fireworks">Lanzar</button>
+      </div>
+      
+      </section>
+
+    </main>
+
+        <script src="app.js"></script>
+</body>
+</html>
