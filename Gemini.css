@@ -1,0 +1,384 @@
+/* =====================
+   ESTILO GENERAL
+===================== */
+
+body{
+
+    margin:0;
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0f172a;
+
+    color:white;
+
+    overflow-x:hidden;
+
+}
+
+/* =====================
+   MENÚ SUPERIOR
+===================== */
+
+nav{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 40px;
+
+    background:rgba(15,23,42,.95);
+
+    backdrop-filter:blur(10px);
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-left:20px;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#4285F4;
+
+}
+
+/* =====================
+   PORTADA GEMINI
+===================== */
+
+header{
+
+    text-align:center;
+
+    padding:120px 20px;
+
+    background:linear-gradient(
+    -45deg,
+    #4285F4,
+    #EA4335,
+    #FBBC05,
+    #34A853
+    );
+
+    background-size:400% 400%;
+
+    animation:gradienteGemini 12s ease infinite;
+
+}
+
+header h1{
+
+    font-size:70px;
+
+    margin-bottom:10px;
+
+    text-shadow:0 0 20px rgba(255,255,255,.5);
+
+}
+
+header p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:20px;
+
+}
+
+/* =====================
+   SECCIONES
+===================== */
+
+section{
+
+    padding:70px 40px;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
+
+/* =====================
+   TARJETAS
+===================== */
+
+.tarjeta{
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin:20px;
+
+    transition:.4s;
+
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 0 15px #4285F4,
+    0 0 15px #EA4335,
+    0 0 15px #FBBC05;
+
+}
+
+.tarjeta h3{
+
+    color:#4285F4;
+
+}
+
+/* =====================
+   IMÁGENES
+===================== */
+
+img{
+
+    width:300px;
+
+    border-radius:15px;
+
+    margin:10px;
+
+    transition:.5s;
+
+}
+
+img:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 25px #4285F4;
+
+}
+
+/* =====================
+   VIDEO
+===================== */
+
+iframe{
+
+    display:block;
+
+    margin:auto;
+
+    border-radius:20px;
+
+    box-shadow:0 0 25px #4285F4;
+
+}
+
+/* =====================
+   BOTONES
+===================== */
+
+button{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    background:#4285F4;
+
+    color:white;
+
+    transition:.4s;
+
+}
+
+button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px #4285F4;
+
+}
+
+/* =====================
+   COMPARATIVA
+===================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#4285F4;
+
+    padding:15px;
+
+}
+
+td{
+
+    border:1px solid #444;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer{
+
+    background:#020617;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+footer a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:10px;
+
+}
+
+footer a:hover{
+
+    color:#4285F4;
+
+}
+
+/* =====================
+   ANIMACIÓN FONDO
+===================== */
+
+@keyframes gradienteGemini{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+/* =====================
+   APARICIÓN
+===================== */
+
+header,
+section,
+footer{
+
+    animation:aparecer 1.5s;
+
+}
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =====================
+   TEXTO BRILLANTE
+===================== */
+
+.logo-gemini{
+
+    background:linear-gradient(
+    90deg,
+    #4285F4,
+    #EA4335,
+    #FBBC05,
+    #34A853
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    font-weight:bold;
+
+}
+
+/* =====================
+   SCROLL SUAVE
+===================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}

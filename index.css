@@ -1,0 +1,303 @@
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#ececec;
+}
+
+/* ENCABEZADO */
+
+.encabezado{
+    background:#1f2a8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.encabezado h1{
+    margin:0;
+}
+
+.encabezado h2{
+    margin:5px;
+    color:gold;
+}
+
+/* MENÚ */
+
+.menu{
+    width:220px;
+    height:100%;
+    background:#222;
+    position:fixed;
+}
+
+.menu ul{
+    list-style:none;
+    padding:0;
+}
+
+.menu a{
+    display:block;
+    color:white;
+    padding:15px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    background:#00aaff;
+    color:black;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    padding:20px;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* ANIMACIÓN DE COLORES */
+
+.animacion-color{
+
+    padding:20px;
+    border-radius:15px;
+    color:white;
+    text-align:center;
+
+    animation:cambiarColor 8s infinite;
+}
+
+@keyframes cambiarColor{
+
+    0%{background:#1f2a8a;}
+
+    25%{background:#4b5bdc;}
+
+    50%{background:#ff7648;}
+
+    75%{background:#00aaff;}
+
+    100%{background:#1f2a8a;}
+
+}
+
+/* TARJETAS */
+
+.contenedor-cajas{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-top:30px;
+
+}
+
+.caja{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    text-decoration:none;
+
+    color:black;
+
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+
+    transition:.3s;
+
+}
+
+.caja:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.cabecera{
+
+    font-size:60px;
+
+    text-align:center;
+
+    color:white;
+
+    padding:40px 10px;
+
+}
+
+.chatgpt{
+    background:#1f2a8a;
+    font-size: 70px;
+}
+
+.Qwen{
+    background:#ff7648;
+    font-size: 70px;
+}
+
+.Gemini{
+    background:#371a76;
+    font-size: 70px;
+}
+
+.Claude{
+    background:#c25f09;
+    font-size: 70px;
+}
+
+.DeepSeek{
+    background:#88990c;
+    font-size: 70px;
+}
+
+.Llama{
+    background:#092dc0;
+    font-size: 70px;
+}
+
+.Mistral{
+    background:#abd309;
+    font-size: 70px;
+}
+
+.Grok{
+    background:#17956b;
+    font-size: 70px;
+}
+
+.Copilot{
+    background:#06cc31;
+    font-size: 70px;
+}
+
+.Perplexity{
+    background:#820abd;
+    font-size: 70px;
+}
+
+.meta{
+    background:#0064e0;
+    font-size: 70px;
+}
+
+.hugging{
+    background:#09863d;
+    font-size: 53px;
+}
+
+.info{
+
+    padding:20px;
+
+}
+
+.info h3{
+
+    color:#1f2a8a;
+
+}
+
+/* VIDEO */
+
+video{
+
+    margin-top:40px;
+
+    border-radius:10px;
+
+}
+
+/* FORMULARIO */
+
+#contacto{
+
+    margin-top:40px;
+
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    width:400px;
+
+    gap:10px;
+
+}
+
+input,
+textarea{
+
+    padding:10px;
+
+    border-radius:10px;
+
+}
+
+button{
+
+    background:#1f2a8a;
+
+    color:white;
+
+    border:none;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#00aaff;
+
+}
+
+/* PIE */
+
+footer{
+
+    margin-top:40px;
+
+    background:#1f2a8a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.redes a{
+
+    color:white;
+
+    font-size:30px;
+
+    margin:15px;
+
+    transition:.3s;
+
+}
+
+.redes a:hover{
+
+    color:gold;
+
+    transform:scale(1.2);
+
+}
